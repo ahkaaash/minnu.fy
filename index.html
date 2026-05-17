@@ -206,8 +206,9 @@
     }
 
     .cta-row button {
-      flex: 1 1 min(160px, 100%);
+      flex: 0 1 auto;
       min-width: 140px;
+      max-width: 280px;
       display: grid;
       place-items: center;
     }
@@ -901,6 +902,11 @@
 
       .mobile-topbar .brand h1 {
         font-size: 1.12rem;
+      }
+
+      .cta-row button {
+        flex: 1 1 100%;
+        min-width: 0;
       }
 
       .hero {
